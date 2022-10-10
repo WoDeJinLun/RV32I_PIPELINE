@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../PIPELINE.srcs/sources_1/imports/code/auxillary" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/ALU.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/auxillary/CPUTEST.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/CtrlUnit.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/HazardDetectionUnit.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/ImmGen.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/common/MUX2T1_32.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/common/MUX4T1_32.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/RAM_B.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/common/REG32.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/REG_EX_MEM.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/REG_ID_EX.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/REG_IF_ID.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/REG_MEM_WB.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/ROM_D.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/RV32core.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/core/Regs.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/common/add_32.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/common/cmp_32.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/auxillary/debug_clk.v" \
+"../../../../PIPELINE.srcs/sources_1/imports/code/sim/core_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
